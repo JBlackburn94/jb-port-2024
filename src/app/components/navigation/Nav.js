@@ -34,7 +34,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed items-center justify-start w-full h-16 p-4 lg:flex">
+    <nav className="fixed z-20 items-center justify-start w-full h-16 p-4 lg:flex">
       <motion.div
         initial={{
           x: "-100",
