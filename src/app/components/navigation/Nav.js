@@ -54,14 +54,16 @@ export default function Navbar() {
       >
         <ul className="flex flex-row items-center justify-center">
           {links.map(({ id, title, link }) => (
-            <li key={id} className="mx-1 select-none md:mx-10">
-              <a
-                href={link}
-                className="text-lg font-semibold md:text-xl hover:underline"
-              >
+            <motion.li
+              key={id}
+              whileHover={{ scale: 1.2 }}
+              transition={{ type: "spring" }}
+              className="mx-1 select-none md:mx-10"
+            >
+              <a href={link} className="text-lg font-semibold md:text-xl">
                 {title}
               </a>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </motion.div>
