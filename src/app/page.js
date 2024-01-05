@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="h-screen bg-black text-white flex flex-col justify-center items-center p-4 lg:p-0">
+    <main className="flex flex-col items-center justify-center h-screen p-8 text-white lg:p-0">
       <div>
         <motion.h1
           initial={{
@@ -16,13 +16,13 @@ export default function Home() {
             duration: 0.5,
             type: "spring",
           }}
-          className="font-bold text-2xl md:text-4xl lg:text-5xl"
+          className="text-2xl font-bold select-none md:text-4xl lg:text-5xl"
         >
           Hello, my name is
           <span className="text-purple-600 uppercase"> Jason Blackburn</span>!
         </motion.h1>
         <motion.p
-          className="font-semibold text-lg md:text-2xl lg:text-4xl py-4"
+          className="py-4 text-lg font-semibold select-none md:text-2xl lg:text-4xl"
           initial={{
             x: "-100%",
             scale: 0,
