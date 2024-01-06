@@ -40,39 +40,39 @@ export default function Home() {
         >
           <h2 className="text-xl font-semibold">Tech Stack</h2>
           <ul className="flex flex-wrap justify-center mt-4 text-center">
-            <span className="flex flex-col items-center w-1/4 px-2 my-4">
+            <span className="flex flex-col items-center px-2 my-4 min-w-1/4">
               <FaHtml5 size={40} />
               <li className="text-lg font-semibold text-yellow-400">HTML</li>
             </span>
-            <span className="flex flex-col items-center w-1/4 px-2 my-4">
+            <span className="flex flex-col items-center px-2 my-4 min-w-1/4">
               <FaCss3Alt size={40} />
               <li className="text-lg font-semibold text-yellow-400">CSS</li>
             </span>
-            <span className="flex flex-col items-center w-1/4 px-2 my-4">
+            <span className="flex flex-col items-center px-2 my-4 min-w-1/4">
               <IoLogoJavascript size={40} />
               <li className="text-lg font-semibold text-yellow-400">
                 JavaScript
               </li>
             </span>
-            <span className="flex flex-col items-center w-1/4 px-2 my-4">
+            <span className="flex flex-col items-center px-2 my-4 min-w-1/4">
               <FaReact size={40} />
               <li className="text-lg font-semibold text-yellow-400">React</li>
             </span>
-            <span className="flex flex-col items-center w-1/4 px-2 my-4">
+            <span className="flex flex-col items-center px-2 my-4 min-w-1/4">
               <SiNextdotjs size={40} />
               <li className="text-lg font-semibold text-yellow-400">Next.Js</li>
             </span>
-            <span className="flex flex-col items-center w-1/4 px-2 my-4">
+            <span className="flex flex-col items-center px-2 my-4 min-w-1/4">
               <SiTailwindcss size={40} />
               <li className="text-lg font-semibold text-yellow-400">
                 Tailwind
               </li>
             </span>
-            <span className="flex flex-col items-center w-1/4 px-2 my-4">
+            <span className="flex flex-col items-center px-2 my-4 min-w-1/4">
               <SiFramer size={40} />
               <li className="text-lg font-semibold text-yellow-400">Framer</li>
             </span>
-            <span className="flex flex-col items-center w-1/4 px-2 my-4">
+            <span className="flex flex-col items-center px-2 my-4 min-w-1/4">
               <FaGithubSquare size={40} />
               <li className="text-lg font-semibold text-yellow-400">GitHub</li>
             </span>
