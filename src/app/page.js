@@ -65,7 +65,7 @@ export default function Home() {
             <span className="flex flex-col items-center w-1/4 px-2 my-4">
               <SiTailwindcss size={40} />
               <li className="text-lg font-semibold text-yellow-400">
-                TailwindCSS
+                Tailwind
               </li>
             </span>
             <span className="flex flex-col items-center w-1/4 px-2 my-4">
