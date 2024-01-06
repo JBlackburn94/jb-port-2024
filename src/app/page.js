@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <section
         id="home"
-        className="flex flex-col items-center justify-center h-screen px-4 pt-16 lg:flex-row lg:justify-evenly bg-gradient-to-r from-violet-500/75 to-fuchsia-500/75"
+        className="flex flex-col items-center justify-center w-full h-screen px-4 pt-16 lg:flex-row lg:justify-evenly bg-gradient-to-r from-gray-900 to-emerald-500"
       >
         <motion.div
           initial={{ scale: 0, x: "-100%" }}

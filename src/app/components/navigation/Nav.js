@@ -45,7 +45,7 @@ export default function Navbar() {
       <motion.div
         animate={isOpen ? "open" : "closed"}
         variants={variants}
-        className="z-10 p-4 text-white rounded bg-gradient-to-r from-violet-500 to-fuchsia-500"
+        className="z-10 p-4 text-white bg-black rounded"
       >
         <ul className="flex flex-row items-center justify-center">
           {links.map(({ id, title, link }) => (
