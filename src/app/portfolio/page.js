@@ -8,7 +8,7 @@ const isVisible = {
   hidden: { opacity: 0, scale: 0 },
 };
 
-export default function Skills() {
+export default function Portfolio() {
   const control = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {

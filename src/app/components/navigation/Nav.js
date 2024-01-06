@@ -18,16 +18,11 @@ export default function Navbar() {
     },
     {
       id: 2,
-      title: "Skills",
-      link: "#skills",
-    },
-    {
-      id: 3,
       title: "Portfolio",
       link: "#portfolio",
     },
     {
-      id: 4,
+      id: 3,
       title: "Contact",
       link: "#contact",
     },
