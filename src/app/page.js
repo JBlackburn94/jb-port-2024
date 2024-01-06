@@ -5,8 +5,11 @@ import Skills from "./skills/page";
 export default function Home() {
   return (
     <main>
-      <section className="flex flex-col items-center justify-start h-screen p-8 pt-24 text-white lg:pt-40 bg-gradient-to-r from-violet-500/50 to-fuchsia-500/50">
-        <div className="z-10 flex flex-col items-center justify-center w-full p-4 rounded-lg md:w-1/2">
+      <section
+        id="home"
+        className="flex flex-col items-center justify-start h-screen p-8 pt-24 text-white lg:pt-40 bg-gradient-to-r from-violet-500/50 to-fuchsia-500/50"
+      >
+        <div className="z-10 flex flex-col items-center justify-center w-3/4 rounded-lg md:w-1/2">
           <motion.h1
             initial={{
               x: "-100%",

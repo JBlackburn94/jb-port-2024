@@ -4,8 +4,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const variants = {
-  open: { x: 0 },
-  closed: { x: "-150%" },
+  open: { x: 0, opacity: 1 },
+  closed: { x: "-150%", opacity: 0 },
 };
 
 export default function Navbar() {
@@ -14,7 +14,7 @@ export default function Navbar() {
     {
       id: 1,
       title: "Home",
-      link: "/",
+      link: "#home",
     },
     {
       id: 2,
