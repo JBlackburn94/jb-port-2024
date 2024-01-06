@@ -15,7 +15,7 @@ export default function Home() {
         <motion.div
           initial={{ scale: 0, x: "-100%" }}
           animate={{ scale: 1, x: 0 }}
-          transition={{ duration: 0.4, type: "spring" }}
+          transition={{ duration: 1, type: "spring" }}
           className="flex flex-col w-full p-5 mx-4 my-4 rounded-md justify-evenly md:w-1/2 lg:w-2/6 h-1/2 bg-black/15"
         >
           <h1 className="text-5xl font-bold select-none">
@@ -35,7 +35,7 @@ export default function Home() {
         <motion.div
           initial={{ scale: 0, x: 100 }}
           animate={{ scale: 1, x: 0 }}
-          transition={{ duration: 0.4, type: "spring" }}
+          transition={{ duration: 1, type: "spring" }}
           className="flex flex-col items-center justify-start w-full p-5 mx-4 my-4 rounded-md md:w-1/2 lg:w-2/6 h-1/2 bg-black/15"
         >
           <h2 className="text-xl font-semibold">Tech Stack</h2>
