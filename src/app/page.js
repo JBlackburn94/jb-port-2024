@@ -7,16 +7,16 @@ import { SiNextdotjs, SiTailwindcss, SiFramer } from "react-icons/si";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-gradient-to-r from-gray-900/75 to-emerald-500/75">
       <section
         id="home"
-        className="flex flex-col items-center justify-center w-full h-screen px-4 pt-16 lg:flex-row lg:justify-evenly bg-gradient-to-r from-gray-900 to-emerald-500"
+        className="flex flex-col items-center justify-center w-full h-screen px-4 pt-16 lg:flex-row lg:justify-evenly "
       >
         <motion.div
           initial={{ scale: 0, x: "-100%" }}
           animate={{ scale: 1, x: 0 }}
           transition={{ duration: 1, type: "spring" }}
-          className="flex flex-col w-full p-5 mx-4 my-4 rounded-md justify-evenly md:w-1/2 lg:w-2/6 h-1/2 bg-black/15"
+          className="flex flex-col w-full p-5 mx-4 my-4 overflow-hidden rounded-md justify-evenly md:w-1/2 lg:w-2/6 h-1/2 bg-black/15"
         >
           <h1 className="text-5xl font-bold select-none">
             Hello, my name is Jason{" "}
@@ -36,7 +36,7 @@ export default function Home() {
           initial={{ scale: 0, x: 100 }}
           animate={{ scale: 1, x: 0 }}
           transition={{ duration: 1, type: "spring" }}
-          className="flex flex-col items-center justify-start w-full p-5 mx-4 my-4 rounded-md md:w-1/2 lg:w-2/6 h-1/2 bg-black/15"
+          className="flex flex-col items-center justify-start w-full p-5 mx-4 my-4 overflow-hidden rounded-md md:w-1/2 lg:w-2/6 h-1/2 bg-black/15"
         >
           <h2 className="text-xl font-semibold">Tech Stack</h2>
           <ul className="flex flex-wrap justify-center mt-4 text-center">
