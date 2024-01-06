@@ -32,7 +32,7 @@ export default function Portfolio() {
           transition={{
             duration: 0.5,
           }}
-          className="flex flex-col items-start justify-start w-full p-8 m-8"
+          className="flex flex-col items-start justify-start p-8 m-8"
         >
           <p>Container</p>
         </motion.div>
@@ -44,7 +44,7 @@ export default function Portfolio() {
           transition={{
             duration: 0.5,
           }}
-          className="flex flex-col items-start justify-start w-full p-8 m-8"
+          className="flex flex-col items-start justify-start p-8 m-8"
         >
           <p>Container</p>
         </motion.div>
