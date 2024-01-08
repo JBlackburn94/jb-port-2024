@@ -38,7 +38,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed z-20 flex items-start justify-start w-full h-screen">
+    <nav className="fixed z-20 flex items-start justify-start w-1/2">
       <motion.div
         initial={{
           x: "-100",
@@ -59,7 +59,7 @@ export default function Navbar() {
       <motion.div
         animate={isOpen ? "open" : "closed"}
         variants={variants}
-        className="absolute z-10 w-full h-screen text-white bg-black md:w-1/4"
+        className="absolute z-10 w-3/4 h-screen text-white bg-black md:w-1/2"
       >
         <ul className="flex flex-col items-center justify-center p-10 md:justify-start md:items-start">
           {links.map(({ id, title, link }) => (
