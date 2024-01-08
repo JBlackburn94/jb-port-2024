@@ -1,12 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import Portfolio from "./portfolio/page";
 import { FaHtml5, FaCss3Alt, FaReact, FaGithubSquare } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiNextdotjs, SiTailwindcss, SiFramer } from "react-icons/si";
 import { riseWithFade, animateHero } from "./utils/animations";
 import Image from "next/image";
-import Hero from "/Users/jasonblackburn/Desktop/Code/anim-port/jb-port-2024/public/hero.webp";
+import hero from "../../public/hero.webp";
 
 export default function Home() {
   const techStack = [
@@ -45,7 +44,7 @@ export default function Home() {
           </motion.h2>
         </motion.div>
         <motion.div variants={animateHero} className="overflow-hidden h-1/2">
-          <Image src={Hero} alt="An image of a building." />
+          <Image src={hero} alt="An image of a building." />
         </motion.div>
 
         <motion.div
