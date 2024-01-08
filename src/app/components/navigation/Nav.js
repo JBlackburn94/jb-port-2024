@@ -38,7 +38,7 @@ export default function Navbar() {
           x: 0,
         }}
         onClick={() => setIsOpen(!isOpen)}
-        className="p-3 text-white"
+        className="p-3 "
       >
         {isOpen ? <FaTimes size={40} /> : <FaBars size={40} />}
       </motion.div>

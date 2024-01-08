@@ -23,32 +23,30 @@ export default function Portfolio() {
       id="skills"
       className="flex flex-col items-center justify-start h-screen mt-8"
     >
-      <div className="flex items-center justify-between">
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={control}
-          variants={isVisible}
-          transition={{
-            duration: 0.5,
-          }}
-          className="flex flex-col items-start justify-start p-8 m-8"
-        >
-          <p>Container</p>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={control}
-          variants={isVisible}
-          transition={{
-            duration: 0.5,
-          }}
-          className="flex flex-col items-start justify-start p-8 m-8"
-        >
-          <p>Container</p>
-        </motion.div>
-      </div>
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={control}
+        variants={isVisible}
+        transition={{
+          duration: 0.5,
+        }}
+        className="flex flex-col items-start justify-start p-8 m-8"
+      >
+        <p>Container</p>
+      </motion.div>
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={control}
+        variants={isVisible}
+        transition={{
+          duration: 0.5,
+        }}
+        className="flex flex-col items-start justify-start p-8 m-8"
+      >
+        <p>Container</p>
+      </motion.div>
     </section>
   );
 }
