@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <motion.section
         id="home"
-        className="px-2 pt-16 h-3/4 md:h-screen md:px-10 md:pt-0"
+        className="px-2 pt-16 h-3/4 md:h-screen md:px-10 md:pt-8"
         initial="initial"
         animate="animate"
       >
@@ -32,7 +32,11 @@ export default function Home() {
           variants={animateHero}
           className="mt-4 overflow-hidden h-1/2"
         >
-          <Image src={hero} alt="An image of a building." />
+          <Image
+            src={hero}
+            alt="An image of a building."
+            className="select-none"
+          />
         </motion.div>
       </motion.section>
       <section className="flex flex-col items-center justify-center mt-16">
