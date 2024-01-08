@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -8,9 +8,24 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiNextdotjs, SiTailwindcss, SiFramer, SiVercel } from "react-icons/si";
-import { riseWithFade } from "@/app/utils/animations";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
+const isVisible = {
+  visible: { opacity: 1, scale: 1 },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 export default function Skills() {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   const techStack = [
     {
       id: 1,
@@ -66,8 +81,14 @@ export default function Skills() {
 
   return (
     <motion.div
-      variants={riseWithFade}
-      className="flex flex-col items-center justify-center w-full overflow-hidden md:w-1/2 lg:w-2/6 h-1/2"
+      ref={ref}
+      initial="hidden"
+      animate={control}
+      variants={isVisible}
+      transition={{
+        duration: 0.5,
+      }}
+      className="flex flex-col items-center justify-center w-full my-16 overflow-hidden h-1/2"
     >
       <h2 className="text-xl font-semibold">Tech Stack</h2>
       <ul className="flex flex-wrap mt-4 text-center justify-evenly">

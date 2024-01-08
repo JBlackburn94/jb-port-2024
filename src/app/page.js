@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { riseWithFade, animateHero } from "./utils/animations";
 import Image from "next/image";
 import hero from "../../public/hero.webp";
-import Skills from "./components/skills/page";
+import Skills from "./components/skills/Skills";
 
 export default function Home() {
   return (
