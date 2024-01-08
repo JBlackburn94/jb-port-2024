@@ -6,7 +6,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiNextdotjs, SiTailwindcss, SiFramer } from "react-icons/si";
 import { riseWithFade, animateHero } from "./utils/animations";
 import Image from "next/image";
-import Hero from "/Users/jasonblackburn/Desktop/Code/anim-port/jb-port-2024/public/hero.jpg";
+import Hero from "/Users/jasonblackburn/Desktop/Code/anim-port/jb-port-2024/public/hero.webp";
 
 export default function Home() {
   const techStack = [
