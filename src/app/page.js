@@ -4,6 +4,7 @@ import { riseWithFade, animateHero } from "./utils/animations";
 import Image from "next/image";
 import hero from "../../public/hero.webp";
 import Skills from "./components/skills/Skills";
+import Portfolio from "./portfolio/page";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center mt-16">
         <Skills />
       </section>
+      <Portfolio />
     </main>
   );
 }

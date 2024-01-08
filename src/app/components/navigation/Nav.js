@@ -46,6 +46,7 @@ export default function Navbar() {
         animate={{
           x: 0,
         }}
+        transition={{ ease: [0.6, 0.01, 0.05, 0.95] }}
         onClick={() => setIsOpen(!isOpen)}
         className="relative z-20 p-3"
       >
@@ -65,7 +66,7 @@ export default function Navbar() {
             <motion.li
               key={id}
               whileHover={{ scale: 1.2 }}
-              transition={{ type: "spring" }}
+              transition={{ ease: [0.6, 0.01, 0.05, 0.95] }}
               className="mx-1 my-10 select-none md:mx-10"
             >
               <a href={link} className="text-lg font-semibold md:text-xl">
