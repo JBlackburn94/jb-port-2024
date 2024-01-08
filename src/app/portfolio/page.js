@@ -75,7 +75,7 @@ export default function Portfolio() {
         className="flex flex-wrap items-start w-full mt-10 justify-evenly md:flex-row "
       >
         {portfolio.map(
-          ({ id, header, description, techStack, deploy, repo, src, alt }) => (
+          ({ id, header, description, techStack, live, repo, src, alt }) => (
             <div
               className="flex flex-col w-full p-8 m-4 rounded md:w-1/2 bg-black/10"
               key={id}
@@ -86,7 +86,7 @@ export default function Portfolio() {
               <p className="className=flex items-center my-2">
                 Built Using: {techStack}
               </p>
-              <a href={deploy} target="_blank">
+              <a href={live} target="_blank">
                 Live Site
               </a>
               <a href={repo} target="_blank">
