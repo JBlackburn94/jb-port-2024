@@ -48,32 +48,21 @@ export default function Portfolio() {
     },
   ];
   return (
-    <section
+    <motion.section
       id="portfolio"
       className="flex flex-col items-center justify-start h-screen mt-8"
+      ref={ref}
+      initial="hidden"
+      animate={control}
+      variants={isVisible}
+      transition={{
+        duration: 0.5,
+      }}
     >
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={control}
-        variants={isVisible}
-        transition={{
-          duration: 0.5,
-        }}
-        className="flex flex-col items-start justify-start"
-      >
+      <div className="flex flex-col items-start justify-start">
         <h2 className="text-xl font-semibold">My Work</h2>
-      </motion.div>
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={control}
-        variants={isVisible}
-        transition={{
-          duration: 0.5,
-        }}
-        className="flex flex-wrap items-start w-full mt-10 justify-evenly md:flex-row "
-      >
+      </div>
+      <div className="flex flex-wrap items-start w-full mt-10 justify-evenly md:flex-row ">
         {portfolio.map(
           ({ id, header, description, techStack, live, repo, src, alt }) => (
             <div
@@ -86,16 +75,24 @@ export default function Portfolio() {
               <p className="className=flex items-center my-2">
                 Built Using: {techStack}
               </p>
-              <a href={live} target="_blank">
+              <a
+                className="w-1/3 p-2 my-2 font-semibold text-center text-white bg-black rounded text-nowrap"
+                href={live}
+                target="_blank"
+              >
                 Live Site
               </a>
-              <a href={repo} target="_blank">
+              <a
+                className="w-1/3 p-2 my-2 font-semibold text-center text-white bg-black rounded text-nowrap"
+                href={repo}
+                target="_blank"
+              >
                 Repo
               </a>
             </div>
           )
         )}
-      </motion.div>
-    </section>
+      </div>
+    </motion.section>
   );
 }
